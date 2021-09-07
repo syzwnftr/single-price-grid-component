@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+  /* border: 2px dotted green; */
+  max-width: 96%;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.subs {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.whyUs {
+  background-color: hsla(179, 62%, 43%, 0.85);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.col {
+  /* border: 1px solid red; */
+  padding: 0.5rem 1.5rem;
+  width: auto;
+  color: white;
+}
+
+.col > * {
+  margin-bottom: 1rem;
+}
+
+.header h1,
+.subs h1,
+.whyUs h1 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.header h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+.header h2 {
+  color: hsl(71, 73%, 54%);
+}
+
+.header p {
+  color: hsl(218, 22%, 67%);
+  line-height: 2;
+}
+
+.pricing {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* .pricing > * {
+  border: 1px solid black;
+} */
+
+.pricing h2 {
+  font-size: 1.8rem;
+  margin-right: 0.8rem;
+}
+
+.pricing p {
+  color: hsla(204, 43%, 93%, 0.6);
+}
+
+.fullAccessText {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  color: hsl(204, 43%, 93%);
+}
+
+.button {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 0.3rem;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.15);
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.benefit {
+  margin-bottom: 1.3rem;
+}
+
+.benefit p {
+  line-height: 1.5;
+  color: hsl(204, 43%, 93%);
+}
