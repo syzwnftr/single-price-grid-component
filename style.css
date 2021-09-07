@@ -13,8 +13,7 @@ body {
 }
 
 .container {
-  /* border: 2px dotted green; */
-  max-width: 96%;
+  max-width: 85%;
   margin: 2rem auto;
   background-color: white;
   border-radius: 0.5rem;
@@ -44,21 +43,30 @@ body {
 .header h1,
 .subs h1,
 .whyUs h1 {
-  font-size: 1.2rem;
   margin-top: 1.5rem;
+}
+
+.header p,
+.fullAccessText,
+.benefit p {
+  font-size: 0.88rem;
 }
 
 .header h1 {
   color: hsl(179, 62%, 43%);
+  margin-bottom: 1.5rem;
 }
 
 .header h2 {
   color: hsl(71, 73%, 54%);
+  font-size: 0.92rem;
+  margin-bottom: 1rem;
 }
 
 .header p {
   color: hsl(218, 22%, 67%);
   line-height: 2;
+  margin-bottom: 1.6rem;
 }
 
 .pricing {
@@ -67,10 +75,6 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-
-/* .pricing > * {
-  border: 1px solid black;
-} */
 
 .pricing h2 {
   font-size: 1.8rem;
@@ -113,4 +117,96 @@ body {
 .benefit p {
   line-height: 1.5;
   color: hsl(204, 43%, 93%);
+}
+
+@media (min-width: 23.5rem) {
+  .container {
+    max-width: 19.91rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    max-width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .col {
+    padding: 2rem 3rem;
+  }
+
+  .header h1,
+  .subs h1,
+  .whyUs h1 {
+    font-size: 1.5rem;
+  }
+
+  .subs h1,
+  .whyUs h1 {
+    margin-top: 1rem;
+  }
+
+  .header p,
+  .fullAccessText,
+  .benefit p {
+    font-size: 1rem;
+  }
+
+  .header {
+    padding-right: 9rem;
+    flex-basis: 100%;
+  }
+
+  .subs,
+  .whyUs {
+    flex-basis: 50%;
+  }
+
+  .subs {
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .whyUs {
+    border-bottom-left-radius: 0rem;
+  }
+
+  .header h1 {
+    margin-bottom: 1.8rem;
+  }
+
+  .header h2 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .header p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  .pricing h2 {
+    font-size: 2.5rem;
+  }
+
+  .button {
+    margin-bottom: 0rem;
+  }
+
+  .benefit {
+    margin-bottom: 0rem;
+  }
+
+  .benefit p {
+    line-height: 1.3;
+  }
 }
