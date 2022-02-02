@@ -38,7 +38,6 @@ h1 {
 }
 
 .col {
-  /* border: 1px solid red; */
   padding: 0.5rem 1.5rem;
   width: auto;
   color: white;
@@ -72,7 +71,6 @@ h1 {
 }
 
 .pricing {
-  /* border: 1px solid black; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -212,5 +210,11 @@ h1 {
 
   .benefit p {
     line-height: 1.4;
+  }
+}
+
+@media (min-width: 90.0625rem) {
+  .container {
+    max-width: 49.5rem;
   }
 }
